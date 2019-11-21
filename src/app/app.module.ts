@@ -43,7 +43,8 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
-import { LayoutComponent } from './components/layout/layout.component';
+import { CardComponent } from './components/card/card.component';
+import { XpanelComponent } from './components/xpanel/xpanel.component';
 
 const appRoutes: Routes = [
   {
@@ -51,8 +52,12 @@ const appRoutes: Routes = [
     component: ButtonsComponent
   },
   {
-    path: 'layout',
-    component: LayoutComponent
+    path: 'card',
+    component: CardComponent
+  },
+  {
+    path: 'xpanel',
+    component: XpanelComponent
   }
 ]
 
@@ -61,7 +66,8 @@ const appRoutes: Routes = [
     AppComponent,
     NavComponent,
     ButtonsComponent,
-    LayoutComponent
+    CardComponent,
+    XpanelComponent
   ],
   imports: [
     RouterModule.forRoot(
